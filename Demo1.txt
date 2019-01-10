@@ -11,7 +11,7 @@ Tiedostojärjestelmä on laajennettu jo valmiiksi käyttöönoton yhteydessä ka
 
 Aikavyöhyke muutettiin oikeaksi ja salasana muutettiin käyttöönoton conffauksessa. Myös laitteen nimen muutin asetuksista.
 
-apy-get update ja spt-get dist-upgrade ajettu komentoriviltä. Tosin järjestelmä päivitti itsensä käyttöönoton yhteydessä, joten komentoja ajaessa ei asennettu uusia tiedostoja.
+apt-get update ja apt-get dist-upgrade ajettu komentoriviltä. Tosin järjestelmä päivitti itsensä käyttöönoton yhteydessä, joten komentoja ajaessa ei asennettu uusia tiedostoja.
 
 4p.
 
