@@ -1,2 +1,4 @@
-# TIEA345-IoTproto
-TIEA345 IoT prototyypit kurssi
+# TIEA345 IoT prototyypit
+Mikko Kivekäs
+
+
