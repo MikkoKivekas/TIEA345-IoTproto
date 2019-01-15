@@ -11,9 +11,9 @@ while 1:
     i=GPIO.input(pir)
     if i==0:
         print 1
-        time.sleep(0.1)
+        time.sleep(1)
     elif i==1:
         print 0
-        time.sleep(0.1)
+        time.sleep(1)
 
 GPIO.cleanup()
