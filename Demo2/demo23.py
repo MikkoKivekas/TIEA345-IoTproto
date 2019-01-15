@@ -29,8 +29,7 @@ GPIO.output(red, 1) #for testing
 
 while True:
     
-    i = GPIO.output(green,1)
-    j = GPIO.output(red,1)
+    i = 0
     
     if i==1:
         GPIO.output(yellow, 1)
@@ -39,13 +38,15 @@ while True:
         GPIO.output(red, 1)
         GPIO.output(yellow, 0)
         time.sleep(1)
+        i = 0
         
-    if j==1:
+    if i==0:
         GPIO.output(yellow, 1)
         time.sleep(1)
         GPIO.output(green, 1)
         GPIO.output(yellow, 0)
         GPIO.output(red, 0)
         time.sleep(1)
+        i = 1
         
 GPIO.cleanup()
