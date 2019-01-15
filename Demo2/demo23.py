@@ -68,6 +68,7 @@ while j == 1:
         GPIO.output(go, 0)
         time.sleep(1)
         carlights(isGreen)#vaihtaa autojen valot p>v
+        time.sleep(3)
         j = 0
     
         
