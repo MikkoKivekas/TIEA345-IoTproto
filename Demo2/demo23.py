@@ -62,6 +62,7 @@ while j == 1:
     if GPIO.input(button) ==1:
         GPIO.output(mark, 1)
         time.sleep(1)
+        print isGreen
         carlights(isGreen)#vaihtaa autojen valot v>p
         GPIO.output(mark, 0)
         GPIO.output(go, 1)
@@ -70,6 +71,7 @@ while j == 1:
         GPIO.output(stop, 1)
         GPIO.output(go, 0)
         time.sleep(1)
+        print isGreen
         carlights(isGreen)#vaihtaa autojen valot p>v
         time.sleep(3)
         j = 0
