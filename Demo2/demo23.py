@@ -28,7 +28,11 @@ GPIO.setup(pir, GPIO.IN)
 GPIO.output(red, 1) #for testing
 
 while True:
-    if GPIO.output(green,1)==1:
+    
+    i = GPIO.output(green,1)
+    j = GPIO.output(red,1)
+    
+    if i==1:
         GPIO.output(yellow, 1)
         GPIO.output(green, 0)
         time.sleep(1)
@@ -36,7 +40,7 @@ while True:
         GPIO.output(yellow, 0)
         time.sleep(1)
         
-    if GPIO.output(red,1)==1:
+    if j==1:
         GPIO.output(yellow, 1)
         time.sleep(1)
         GPIO.output(green, 1)
