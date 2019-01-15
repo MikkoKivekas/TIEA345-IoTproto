@@ -33,7 +33,7 @@ GPIO.output(go, 0)
 GPIO.output(stop, 1)
 time.sleep(3)
 
-isGreen = 1
+global isGreen = 1
 j = 1
 
 def carlights(i):
@@ -55,7 +55,7 @@ def carlights(i):
         GPIO.output(red, 0)
         time.sleep(1)
     
-    
+    return isGreen
     
     
 while j == 1:   
@@ -63,7 +63,7 @@ while j == 1:
         GPIO.output(mark, 1)
         time.sleep(1)
         print isGreen
-        carlights(isGreen)#vaihtaa autojen valot v>p
+        isGreen = carlights(isGreen)#vaihtaa autojen valot v>p
         GPIO.output(mark, 0)
         GPIO.output(go, 1)
         GPIO.output(stop, 0)
@@ -72,7 +72,7 @@ while j == 1:
         GPIO.output(go, 0)
         time.sleep(1)
         print isGreen
-        carlights(isGreen)#vaihtaa autojen valot p>v
+        isGreen = carlights(isGreen)#vaihtaa autojen valot p>v
         time.sleep(3)
         j = 0
     
