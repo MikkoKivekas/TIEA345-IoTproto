@@ -27,7 +27,9 @@ GPIO.setup(pir, GPIO.IN)
 
 GPIO.output(red, 1) #for testing
 
-while True:
+j=1
+
+while j:
     
     i = 0
     
@@ -48,5 +50,7 @@ while True:
         GPIO.output(red, 0)
         time.sleep(1)
         i = 1
+        
+    j=0
         
 GPIO.cleanup()
