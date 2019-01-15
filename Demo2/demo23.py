@@ -33,7 +33,7 @@ GPIO.output(go, 0)
 GPIO.output(stop, 1)
 time.sleep(3)
 
-global isGreen = 1
+isGreen = 1
 j = 1
 
 def carlights(i):
