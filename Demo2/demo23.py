@@ -73,7 +73,7 @@ while j == 1:
         time.sleep(1)
         isGreen = carlights(isGreen)#vaihtaa autojen valot p>v
         time.sleep(3)
-        if GPIO.input(button) ==1 # if pressed during this, program will end
+        if GPIO.input(button) ==1: # if pressed during this, program will end
             j = 0
     
         
