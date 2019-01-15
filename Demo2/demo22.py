@@ -7,7 +7,7 @@ pir = 5
 
 GPIO.setup(pir, GPIO.IN)
 
-while TRUE:
+while 1:
     i=GPIO.input(pir)
     if i==0:
         print 1
