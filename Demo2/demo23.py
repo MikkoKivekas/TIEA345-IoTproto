@@ -30,30 +30,45 @@ GPIO.output(green, 1)
 GPIO.output(yellow, 0)
 time.sleep(3)
 
-j=0
+isGreen = 1
+j = 1
 
-while j==0:
-    
-    i = 1
-    
+def carlights(i):
     if i==1:
         GPIO.output(yellow, 1)
         GPIO.output(green, 0)
         time.sleep(1)
         GPIO.output(red, 1)
         GPIO.output(yellow, 0)
+        isGreen = 0
         time.sleep(1)
-        i = 0
         
     if i==0:
         GPIO.output(yellow, 1)
         time.sleep(1)
         GPIO.output(green, 1)
+        isGreen = 1
         GPIO.output(yellow, 0)
         GPIO.output(red, 0)
         time.sleep(1)
-        i = 1
-        
-    j=1
+    
+    
+    
+    
+while j == 1:   
+    if GPIO.input(button) ==1:
+        GPIO.output(mark, 1)
+        time.sleep(1)
+        carlights(isGreen)#vaihtaa autojen valot v>p
+        GPIO.output(mark, 0)
+        GPIO.output(go, 1)
+        GPIO.output(stop, 0)
+        time.sleep(3)
+        GPIO.output(stop, 1)
+        GPIO.output(go, 0)
+        time.sleep(1)
+        carlights(isGreen)#vaihtaa autojen valot p>v
+        j = 0
+    
         
 GPIO.cleanup()
