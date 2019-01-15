@@ -30,9 +30,9 @@ GPIO.output(green, 0)
 GPIO.output(yellow, 0)
 time.sleep(3)
 
-j=1
+j=0
 
-while j:
+while j==0:
     
     i = 0
     
@@ -54,6 +54,6 @@ while j:
         time.sleep(1)
         i = 1
         
-    j=0
+    j=1
         
 GPIO.cleanup()
