@@ -3,8 +3,6 @@ import time
 
 Vilkku = 4
 
-GPIO.clenaup()
-
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(Vilkku, GPIO.OUT)
