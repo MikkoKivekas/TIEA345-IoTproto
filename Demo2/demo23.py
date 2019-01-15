@@ -29,8 +29,8 @@ GPIO.setup(pir, GPIO.IN)
 GPIO.output(red, 0) 
 GPIO.output(green, 1)
 GPIO.output(yellow, 0)
-GPIO.output(go, 1)
-GPIO.output(stop, 0)
+GPIO.output(go, 0)
+GPIO.output(stop, 1)
 time.sleep(3)
 
 isGreen = 1
