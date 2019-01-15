@@ -26,7 +26,9 @@ GPIO.setup(button, GPIO.IN)
 GPIO.setup(pir, GPIO.IN)
 
 GPIO.output(red, 1) #for testing
-time.sleep(1)
+GPIO.output(green, 0)
+GPIO.output(yellow, 0)
+time.sleep(3)
 
 j=1
 
