@@ -25,9 +25,12 @@ pir = 22
 GPIO.setup(button, GPIO.IN)
 GPIO.setup(pir, GPIO.IN)
 
-GPIO.output(red, 0) #for testing
+#initial condition
+GPIO.output(red, 0) 
 GPIO.output(green, 1)
 GPIO.output(yellow, 0)
+GPIO.output(go, 1)
+GPIO.output(stop, 0)
 time.sleep(3)
 
 isGreen = 1
