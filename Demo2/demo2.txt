@@ -1,0 +1,15 @@
+2.1
+
+Vilkkuva valo toimii. Valo vilkahtaa kolme kertaa.
+
+
+2.2
+
+Nappi ja PIR toimii, konsoliin päivitetään tieto molempien laitteiden tilasta
+
+
+2.3-5
+
+Liikennevalojärjestelmä toimii, lähtötila on että autoille vihreää ja käveliöille punaista. Napista vaihdetaan valo kävelijöille, jos ei näy liikennettä PIR sensorissa.
+Liikettä näkyessä odotetaan 2 sekuntia. Nappia painamalla syttyy myös merkkivalo että valojen vaihtamisen viesti on vastaanotettu.
+Kytkennät kuvassa demo2.png, järjestelmä näytetty ohjaajalle ohjauksessa.
