@@ -1,5 +1,8 @@
 3.1
+Koodi tiedostossa demo31.py
+Tulosterivi: Temperature=294.0 K  Humidity=15.0%
 
+Lämpötila kelvineinä.
 
 3.2
 
