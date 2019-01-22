@@ -10,7 +10,7 @@ pin = 12
 humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 
 #lampotila kelvineina, koska fyysikon on pakko
-temperature = temperarture + 273
+temperature = temperature + 273
 
 #Tulostus
 if humidity is not None and temperature is not None:
