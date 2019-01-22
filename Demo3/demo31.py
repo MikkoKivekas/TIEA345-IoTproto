@@ -9,7 +9,7 @@ pin = 12
 #Senssorin luenta
 humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 
-#lampötila kelvineina, koska fyysikon on pakko
+#lampotila kelvineina, koska fyysikon on pakko
 temperature = temperarture + 273
 
 #Tulostus
