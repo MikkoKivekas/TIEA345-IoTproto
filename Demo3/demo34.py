@@ -12,7 +12,7 @@ i = 1
 while i:
   if GPIO.input(pir)==1:
     camera.start_preview()
-    camera.capture('/home/pi/IoT/TIEA345/Demo3/pir.jpg)
+    camera.capture('/home/pi/IoT/TIEA345/Demo3/pir.jpg')
     time.sleep(1)
     i = 0
    
