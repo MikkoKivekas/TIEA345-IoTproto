@@ -18,4 +18,9 @@ Komento videon ottamiseksi: raspivid -w 640 -h 480 -t 15000 -o video.h264
 Tehty, koodit filussa demo34.py
 
 3.5
+Tasatunneittain tehty kuvan ottaminentehty Cron:lla. Cronin crontabiin tehty muutos
+00 * * * * raspistill -o /home/pi/IoT/TIEA345/Demo3/tunneittain.jpg
 
+Erillistä Python-ohjelmaa ei käytetä.
+
+3.6
