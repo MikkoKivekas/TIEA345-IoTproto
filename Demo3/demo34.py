@@ -1,5 +1,4 @@
 from picamera import PiCamera
-import system as sys
 import RPi.GPIO as GPIO
 import time
 
