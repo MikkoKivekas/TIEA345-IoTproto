@@ -8,7 +8,7 @@ pir = 4
 GPIO.setup(pir, GPIO.IN)
 
 i = 1
-time.sleep(7) 
+
 while i:
   time.sleep(0.5)
   if GPIO.input(pir)==1:
