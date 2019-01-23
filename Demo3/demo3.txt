@@ -13,6 +13,7 @@ Kamerakuva tiedostossa cam.jpg. Kuva on maksimiresoluution kuva.
 15 sekunnin video: https://youtu.be/q5dkanD-u30
 Resoluutio muokattu 640x480. 
 Komento videon ottamiseksi: raspivid -w 640 -h 480 -t 15000 -o video.h264
+
 3.4
 
 
