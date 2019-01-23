@@ -1,6 +1,7 @@
 from picamera import PiCamera
 import RPi.GPIO as GPIO
 import time
+GPIO.setmode(GPIO.BCM)
 
 camera = PiCamera()
 pir = 4
