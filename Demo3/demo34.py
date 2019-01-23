@@ -10,9 +10,11 @@ GPIO.setup(pir, GPIO.IN)
 i = 1
 
 while i:
+  time.sleep(0.5)
   if GPIO.input(pir)==1:
     camera.start_preview()
     camera.capture('/home/pi/IoT/TIEA345/Demo3/pir.jpg')
+    camera.stop_preview()
     time.sleep(1)
     i = 0
    
