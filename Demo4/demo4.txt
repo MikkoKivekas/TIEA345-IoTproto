@@ -1,16 +1,26 @@
-3.1
+4.1
 Motion asennettu onnistuneesti. 
 Conffin muokkaus:
 target_dir /home/pi/motion
 
-3.2
+
+4.2
 Tallennetaan kaksi framea ennen liikettä. Conffitiedoston muokkaus:
 pre_capture 0 -> pre_capture 2
 
 
-3.3
+4.3
+Muutetaan framerate ja määritetään kuinka monta framea otetaan
+framerate 30
+
+post_capture 297 #koska ennen kaappaushetekä otetaan kaksi ja yksi viikkeen havaitsemishetkellä. 2+1+297 = 300
+
+max_movie_time 10 #pilkkoo videon pakolla jos liike pidempi kuin 10 s.
 
 3.4
+Conffin muutokset:
+area_detect 5
+
 
 3.5
 
