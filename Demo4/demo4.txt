@@ -1,0 +1,16 @@
+3.1
+Motion asennettu onnistuneesti. 
+Conffin muokkaus:
+target_dir /home/pi/motion
+
+3.2
+Tallennetaan kaksi framea ennen liikettä. Conffitiedoston muokkaus:
+pre_capture 0 -> pre_capture 2
+
+
+3.3
+
+3.4
+
+3.5
+
