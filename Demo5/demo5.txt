@@ -19,6 +19,9 @@ Ohjelma lopetetaan kun painetaan nappia pohjassa valoshown jälkeen.
 4p
 
 5.3
+Redis tietokanta asennettu ja kaksi tiedostoa juttelee keskenään. Arvotaan satunnaislukuja joita publishataan
+demo53a.py ja demo53b.py
+
 
 5.4
 
