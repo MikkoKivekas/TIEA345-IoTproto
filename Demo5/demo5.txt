@@ -1,4 +1,12 @@
 5.1
+Toimiva PIR.LED yhdistelmä. 
+Kääntämiseksi 
+cc demo51.c -o demo51 -l wiringPi 
+ja ajamiseksi
+./demo51
+
+Ohjelma lopetetaan nappia painamalla.
+
 
 5.2
 
