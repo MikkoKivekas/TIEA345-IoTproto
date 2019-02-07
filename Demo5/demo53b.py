@@ -15,3 +15,5 @@ while 1:
     if(viesti != None)
         print viesti["channel"]
         print viesti["data"]
+        if viesti["data"] ==1:
+            break
