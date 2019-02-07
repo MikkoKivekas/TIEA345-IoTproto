@@ -8,7 +8,7 @@ red = redis.StrictRedis(host='localhost', port=6379, db=0)
     #red.publish("topic","value")
 # subscribe  
 
-while 1
+while 1:
     pub = red.pubsub()
     pub.subscribe('satunnaisluku')
     viesti=pub.get_message() 
