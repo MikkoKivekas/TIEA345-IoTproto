@@ -6,7 +6,7 @@ int main()
 
   wiringPiSetupGpio();
 
-  pinMode(14, INPUT); //pir
+  pinMode(4, INPUT); //pir
   pinMode(6, INPUT);  //nappi
   pinMode(5, OUTPUT);//led
   digitalWrite(5, LOW);
@@ -14,12 +14,14 @@ int main()
     // while loop terminates when button is pressed
     while (digitalRead(6)==0) 
   {
-    if(digitalRead(5)==1){
+    if(digitalRead(4)==1){
       digitalWrite(5, HIGH);
-      printf("kylla liike");
+      printf("kylla liike n");
+      sleep(1);//waits for a second
+      contunue;
     }
       digitalWrite(5, LOW);
-      printf("ei liike");
+      printf("ei liike \n");
       sleep(1);//waits for a second
   }
 
