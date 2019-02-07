@@ -18,7 +18,7 @@ int main()
       digitalWrite(5, HIGH);
       printf("kylla liike n");
       sleep(1);//waits for a second
-      contunue;
+      continue;
     }
       digitalWrite(5, LOW);
       printf("ei liike \n");
