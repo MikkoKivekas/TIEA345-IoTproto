@@ -13,4 +13,5 @@ while 1:
   rand = random.randint(1,101)
   red.publish("satunniasluku",rand)
   sleep(1)
-  if(rand ==1)
+  if rand ==1:
+        break
