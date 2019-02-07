@@ -14,10 +14,9 @@ int main()
   {
     if(digitalRead(5)==1){
       digitalWrite(5, HIGH);
-      printf("Pin 6 tila on HIGH\n");
     }
       digitalWrite(5, LOW);
-      Sleep(1000);//waits for a second
+      sleep(1);//waits for a second
   }
 
     return 0;
