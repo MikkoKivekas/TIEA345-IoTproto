@@ -14,8 +14,10 @@ int main()
   {
     if(digitalRead(5)==1){
       digitalWrite(5, HIGH);
+      printf(kylla liike);
     }
       digitalWrite(5, LOW);
+      printf(ei liike);
       sleep(1);//waits for a second
   }
 
