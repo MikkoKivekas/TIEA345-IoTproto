@@ -6,9 +6,17 @@ ja ajamiseksi
 ./demo51
 
 Ohjelma lopetetaan nappia painamalla.
-
+2p
 
 5.2
+Liikennevalot PIRillä ja napeilla ja kaikilla.
+Kääntämiseksi 
+cc demo52.c -o demo52 -l wiringPi 
+ja ajamiseksi
+./demo52
+
+Ohjelma lopetetaan kun painetaan nappia pohjassa valoshown jälkeen.
+4p
 
 5.3
 
