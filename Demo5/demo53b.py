@@ -12,6 +12,7 @@ while 1:
     pub = red.pubsub()
     pub.subscribe('satunnaisluku')
     viesti=pub.get_message() 
+    sleep(0.1)
     if(viesti != None)
         print viesti["channel"]
         print viesti["data"]
